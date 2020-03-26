@@ -1,6 +1,7 @@
 class CreateLessons < ActiveRecord::Migration[5.2]
   def change
     create_table :lessons do |t|
+      t.integer :grade_level_id
       t.string :title
       t.string :source
       t.text :description
